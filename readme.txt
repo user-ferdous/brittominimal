@@ -1,11 +1,15 @@
 ﻿=== Britto Minimal ===
+Theme Name: BrittoMinimal
+Author: M. I. A. Ferdous
+Author URI: https://www.miaferdous.com/
 Contributors: ferdousoly
-Tags: left-sidebar, fixed-width, custom-background
+Tags: custom-background, custom-colors, custom-menu, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, blog, news, food-and-drink
 Requires at least: 4.0
-Tested up to: 5.2.4
-Stable tag: 1.02 
+Tested up to: 5.3.2
+Stable tag: 1.03 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: brittominimal
 
 Britto Minimal is a simple responsive WordPress blog and news theme made for bloggers and newspapers.
 
@@ -14,6 +18,9 @@ Britto Minimal is a simple responsive WordPress blog and news theme made for blo
 
 
 == Changelog ==
+
+= 1.03 =
+* Bug fixes
 
 = 1.0 =
 * Initial Relase 
