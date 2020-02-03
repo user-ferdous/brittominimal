@@ -39,12 +39,12 @@
 					 
 					
                     <?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
-     <a href="<?php echo get_home_url(); ?>">
+     <a href="<?php echo esc_url ( get_home_url()); ?>">
                   <img src="<?php echo $image[0]; ?>" alt="logo">
 				  </a>
           <?php else : ?> 
-		  <a href="<?php echo get_home_url(); ?>">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/logo.png" alt="<?php bloginfo( 'name' ); ?>" width="150" height="50" /></a>
+		  <a href="<?php echo  esc_url ( get_home_url()); ?>">
+        <img src="<?php echo esc_url (get_stylesheet_directory_uri()); ?>/icons/logo.png" alt="<?php bloginfo( 'name' ); ?>" width="150" height="50" /></a>
 		</a>
             <?php endif; ?>
                        

@@ -65,7 +65,7 @@
 		endif; ?>
          <span class="blog-feed-category"><?php the_category(' '); ?></span>
 		<div class="blog-feed-meta">
-			<a href="<?php the_permalink(); ?>">By	<span class="post-author"><?php echo get_the_author(); ?> | </a> 
+			<a href="<?php the_permalink(); ?>"><?php esc_html_e( 'By ', 'brittominimal' ); ?><span class="post-author"><?php echo esc_url (get_the_author()); ?> | </a> 
 			<span class="post-date"><?php brittominimal_posted_on(); ?></span>
 			<!-- Sticky banner -->
 			<?php if(is_sticky()) : ?>
