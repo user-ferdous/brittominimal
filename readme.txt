@@ -7,7 +7,7 @@ Tags: custom-background, custom-colors, custom-menu, featured-image-header, feat
 Requires at least: 4.7
 Requires php : 5.6
 Tested up to: 5.3.2
-Stable tag: 1.03 
+Stable tag: 1.04 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: brittominimal
@@ -27,9 +27,12 @@ Source: http://fontawesome.io
 == Images Screenshot ==
 
 License: CC0 1.0 Universal (CC0 1.0)
-https://unsplash.com/photos/IHKBF23A_iw
+https://stocksnap.io/photo/B028VXG7BC
 
 == Changelog ==
+
+= 1.04 =
+* Bug fixes
 
 = 1.03 =
 * Bug fixes

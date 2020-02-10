@@ -19,6 +19,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'brittominimal' ); ?></a>
 		<header id="masthead" class="site-header" role="banner">
@@ -29,9 +30,7 @@
 						<span class="m_menu_icon"></span>
 						<span class="m_menu_icon"></span>
 					</button>
-					<div class="logo">
-					
-					
+					<div class="sitelogo">				
 					  <?php 
                   $custom_logo_id = get_theme_mod( 'custom_logo' );
             $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -40,12 +39,17 @@
 					
                     <?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
      <a href="<?php echo esc_url ( get_home_url()); ?>">
+	              <div class="logo">
                   <img src="<?php echo $image[0]; ?>" alt="logo">
 				  </a>
+				  </div>
           <?php else : ?> 
-		  <a href="<?php echo  esc_url ( get_home_url()); ?>">
-        <img src="<?php echo esc_url (get_stylesheet_directory_uri()); ?>/icons/logo.png" alt="<?php bloginfo( 'name' ); ?>" width="150" height="50" /></a>
-		</a>
+		  <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<?php endif;
+
+					$description = get_bloginfo( 'description', 'display' );
+					if ( $description || is_customize_preview() ) : ?>
+						<p class="site-description"><?php echo $description; ?></p>
             <?php endif; ?>
                        
 					</div>

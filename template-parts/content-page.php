@@ -26,7 +26,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<?php
+	<?php esc_url (
 		edit_post_link(
 			sprintf(
 				/* translators: %s: Name of current post */
@@ -35,7 +35,7 @@
 			),
 			'<footer class="entry-footer"><span class="edit-link">',
 			'</span></footer><!-- .entry-footer -->'
-		);
+		));
 	?>
 
 </article><!-- #post-## -->
